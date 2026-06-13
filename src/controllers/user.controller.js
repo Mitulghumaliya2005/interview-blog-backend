@@ -31,6 +31,8 @@ async function updateUserController(req, res) {
 
 async function deleteUserController(req, res) {
     try {
+        console.log("deleteUserController: ", deleteUserController);
+        
         const { id } = req.params;
         if (!id) {
             throw new Error('User ID is required');

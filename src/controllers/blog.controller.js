@@ -43,7 +43,8 @@ const addBlogController = async (req, res) => {
 
 const updateBlogController = async (req, res) => {
     try {
-        const { id, title, content } = req.body;
+        const { title, content } = req.body;
+        const { id } = req.params;
 
         if (!id) {
             throw new Error('Blog ID is required');

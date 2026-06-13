@@ -5,7 +5,7 @@ const router = Router();
 
 router.get('/getBlogs', getBlogsController);
 router.post('/addBlog', addBlogController);
-router.put('/updateBlog', updateBlogController);
+router.put('/updateBlog/:id', updateBlogController);
 router.delete('/deleteBlog/:id', deleteBlogController);
 
 export default router;
