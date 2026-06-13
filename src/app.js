@@ -12,4 +12,8 @@ app.use(cors());
 
 app.use('/api', appRoute);
 
+app.get('/', async (req,res) => {
+    return res.send("Hello Wordls")
+});
+
 export { app };
